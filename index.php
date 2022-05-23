@@ -91,7 +91,7 @@ $faqs = [
     <header>
 <div class="d-flex">
     <img class="logo" src="logo.png" alt="">
-    <h5 class="sottotitolo">Privacy e Termini</h5>
+    <h5 >Privacy e Termini</h5>
 </div>
 
 </div>
@@ -115,7 +115,7 @@ $faqs = [
     <hr class="mb-3">
 
     </header>
-<main class="text-center">
+<main class="text-main">
 <?php
 
 foreach ($faqs as  $faq) {
