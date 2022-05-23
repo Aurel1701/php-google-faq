@@ -83,13 +83,47 @@ $faqs = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google faqs</title>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 <body>
     <header>
+    <ul class="list" >
+    <li class="px">
+        <a href="#">Introduzione</a>
+    </li>
+    <li class="px">
+        <a style="padding-left:20px" href="#">Norme sulla privacy</a>
+    </li>
+    <li class="px">
+        <a style="padding-left:20px" href="#">Termini di servizio</a>
+    </li>
+    <li class="px">
+        <a style="padding-left:20px" href="#">Tecnologie</a>
+    </li>
+    <li class="px">
+        <a style="padding-left:20px" href="#">Domande frequenti</a>
+    </li>
+    </ul>
+    <hr class="mb-3">
 
     </header>
-    
-    
+<main>
+<?php
+
+foreach ($faqs as  $faq) {
+  ?>
+  <h1> <?php echo $faq['domanda'] ?> </h1>
+
+  <p>
+    <?php echo $faq['risposta'] ?>
+  </p>
+
+  <?php
+  
+}
+
+ ?>
+   
+</main>
 
 </body>
 </html>
