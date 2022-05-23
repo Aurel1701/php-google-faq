@@ -83,39 +83,48 @@ $faqs = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google faqs</title>
+    <!-- link css -->
     <link rel="stylesheet" href="style.css">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <body>
     <header>
+<div class="d-flex">
+    <img class="logo" src="logo.png" alt="">
+    <h5 class="sottotitolo">Privacy e Termini</h5>
+</div>
+
+</div>
     <ul class="list" >
     <li class="px">
         <a href="#">Introduzione</a>
     </li>
     <li class="px">
-        <a style="padding-left:20px" href="#">Norme sulla privacy</a>
+        <a  href="#">Norme sulla privacy</a>
     </li>
     <li class="px">
-        <a style="padding-left:20px" href="#">Termini di servizio</a>
+        <a  href="#">Termini di servizio</a>
     </li>
     <li class="px">
-        <a style="padding-left:20px" href="#">Tecnologie</a>
+        <a href="#">Tecnologie</a>
     </li>
     <li class="px">
-        <a style="padding-left:20px" href="#">Domande frequenti</a>
+        <a href="#">Domande frequenti</a>
     </li>
     </ul>
     <hr class="mb-3">
 
     </header>
-<main>
+<main class="text-center">
 <?php
 
 foreach ($faqs as  $faq) {
   ?>
-  <h1> <?php echo $faq['domanda'] ?> </h1>
+  <h2> <?php echo $faq['domanda'] ?> </h2>
 
-  <p>
+  <h4>
     <?php echo $faq['risposta'] ?>
-  </p>
+  </h4>
 
   <?php
   
